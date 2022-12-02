@@ -5,9 +5,14 @@
     <title>ADC | HSE Art, Design & Coding Community</title>
 
     <style>
+      :root {
+        --width: 88vw;
+      }
+
       html,
       body {
         margin: 0;
+        font-family: Helvetica, Arial, sans-serif;
       }
 
       body {
@@ -22,8 +27,8 @@
       }
 
       iframe {
-        width: 100vw;
-        height: 100vh;
+        width: var(--width);
+        height: calc(var(--width) / 16 * 9);
       }
 
       .symbol {
@@ -32,21 +37,55 @@
         background-image: url("ADC-Symbol.svg");
         background-size: cover;
       }
+
+      footer {
+        margin-bottom: 50px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      footer a {
+        margin: 0 16px;
+        color: grey;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: #79ff39;
+      }
     </style>
   </head>
   <body>
     <div class="symbol"></div>
+
     <iframe
       src="https://player.vimeo.com/video/381018212"
       frameborder="0"
       allow="autoplay; fullscreen"
       allowfullscreen
     ></iframe>
+
     <iframe
       src="https://www.youtube.com/embed/EZEiMqk3rw4"
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe>
+
+    <iframe
+      src="https://www.youtube.com/embed/fkV_rWWUq_Q"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <footer>
+      <!-- prettier-ignore -->
+      <a href="https://codetutorial.adc.ac" target="_blank">ADC Code Tutorial</a>
+      <!-- prettier-ignore -->
+      <a href="https://synthtutorial.adc.ac" target="_blank">ADC Synth Tutorial</a>
+      <!-- prettier-ignore -->
+      <a href="https://soroka.tools" target="_blank">Soroka</a>
+    </footer>
   </body>
 </html>
