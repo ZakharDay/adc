@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: var(--dark-grey);
+}
+
+.menubar {
+  padding: 20px 0;
+
+  .home {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-image: url('images/ADC-Symbol.svg');
+    background-size: cover;
+  }
+}
+
+.mainMenu {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    display: block;
+    margin: 10px auto;
+    font-family: ADC;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--grey);
+
+    &:hover {
+      color: var(--acid-green);
+    }
+  }
+}
+
+.footerbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+
+  a {
+    text-decoration: none;
+    color: var(--medium-grey);
+
+    &:hover {
+      color: var(--acid-green);
+    }
+  }
+}

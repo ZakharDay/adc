@@ -1,0 +1,37 @@
+body.about {
+  .aboutVideos {
+    width: 996px;
+    margin: 0 auto;
+
+    iframe {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+      height: 550px;
+    }
+  }
+}
+
+@media all and (max-width: 1023px) and (min-width: 600px) {
+  body.about {
+    .aboutVideos {
+      width: 708px;
+
+      iframe {
+        height: 394px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 599px) {
+  body.about {
+    .aboutVideos {
+      width: calc(100vw - 40px);
+
+      iframe {
+        height: calc((100vw - 40px) * 0.5542857143);
+      }
+    }
+  }
+}

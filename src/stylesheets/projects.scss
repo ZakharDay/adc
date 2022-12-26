@@ -1,0 +1,52 @@
+body.projects {
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    width: 996px;
+    min-height: calc(100vh - 90px - 60px);
+    margin: 0 auto;
+
+    .project {
+      width: 324px;
+      height: 458px;
+      background-size: cover;
+      background-image: url('images/cover-fallback.png');
+
+      img {
+        width: 100%;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1023px) and (min-width: 600px) {
+  body.projects {
+    .projectsGrid {
+      grid-template-columns: repeat(2, 1fr);
+      width: 708px;
+
+      .project {
+        width: 348px;
+        height: 491px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 599px) {
+  body.projects {
+    .projectsGrid {
+      display: block;
+      width: 100%;
+
+      .project {
+        width: calc(100vw - 40px);
+        height: calc((100vw - 40px) * 1.4111111111);
+        margin: 12px auto;
+      }
+    }
+  }
+}
