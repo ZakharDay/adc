@@ -29,20 +29,26 @@ body {
 .mainMenu {
   display: flex;
   flex-direction: column;
+  font-family: ADC;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
 
   a {
     display: block;
     margin: 10px auto;
-    font-family: ADC;
-    font-size: 50px;
-    text-transform: uppercase;
     text-decoration: none;
-    text-align: center;
     color: var(--grey);
 
     &:hover {
       color: var(--acid-green);
     }
+  }
+
+  div {
+    margin: 10px auto;
+    color: var(--dark-grey);
+    text-shadow: 0 0 1px white;
   }
 }
 
@@ -59,5 +65,11 @@ body {
     &:hover {
       color: var(--acid-green);
     }
+  }
+}
+
+@media all and (max-width: 599px) {
+  .mainMenu {
+    font-size: 26px;
   }
 }
