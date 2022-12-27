@@ -36,8 +36,9 @@ body {
 
   a {
     display: block;
-    margin: 10px auto;
+    margin: -15px auto;
     text-decoration: none;
+    line-height: 2;
     color: var(--grey);
 
     &:hover {
