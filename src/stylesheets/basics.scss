@@ -72,5 +72,11 @@ body {
 @media all and (max-width: 599px) {
   .mainMenu {
     font-size: 26px;
+
+    a,
+    div {
+      margin: 0 auto;
+      line-height: 1.5;
+    }
   }
 }
