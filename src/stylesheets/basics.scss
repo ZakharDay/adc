@@ -26,6 +26,18 @@ body {
   }
 }
 
+h2 {
+  grid-column: 1 / 4;
+  margin: 60px auto 16px;
+  font-family: ADC;
+  font-size: 36px;
+  line-height: 2;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+  text-shadow: 0 0 1px white;
+}
+
 .mainMenu {
   display: flex;
   flex-direction: column;
@@ -60,11 +72,17 @@ body {
   height: 60px;
 
   a {
+    margin: 0 20px;
     text-decoration: none;
     color: var(--medium-grey);
 
     &:hover {
       color: var(--acid-green);
+    }
+
+    &.comingSoon {
+      display: none;
+      color: rgba(255, 255, 255, 0.2);
     }
   }
 }
@@ -77,6 +95,17 @@ body {
     div {
       margin: 0 auto;
       line-height: 1.5;
+    }
+  }
+
+  .footerbar {
+    flex-direction: column;
+    height: auto;
+    margin: 80px 0;
+    padding-bottom: 20px;
+
+    a {
+      margin: 10px 0;
     }
   }
 }

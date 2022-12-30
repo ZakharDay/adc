@@ -9,8 +9,8 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
-    // page: './src/page.jsx'
+    index: './src/index.js',
+    projects: './src/projects.js'
   },
   output: {
     filename: '[name].js',
@@ -85,16 +85,32 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/index.html',
-      filename: './index.html'
-      // chunks: ['index']
+      filename: './index.html',
+      chunks: ['index']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/about.html',
-      filename: './about.html'
-      // chunks: ['index']
+      template: './src/brand.html',
+      filename: './brand.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/community.html',
+      filename: './community.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/mediakit.html',
+      filename: './mediakit.html',
+      chunks: ['index']
     }),
 
     // Internal pages
@@ -102,72 +118,72 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/web-posters.html',
-      filename: './web-posters.html'
-      // chunks: ['index']
+      filename: './web-posters.html',
+      chunks: ['projects']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/web-synths.html',
-      filename: './web-synths.html'
-      // chunks: ['index']
+      filename: './web-synths.html',
+      chunks: ['projects']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/games.html',
-      filename: './games.html'
-      // chunks: ['index']
+      filename: './games.html',
+      chunks: ['projects']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/tools.html',
-      filename: './tools.html'
-      // chunks: ['index']
+      filename: './tools.html',
+      chunks: ['projects']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/interaction-design.html',
-      filename: './interaction-design.html'
-      // chunks: ['index']
+      filename: './interaction-design.html',
+      chunks: ['projects']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/links.html',
-      filename: './links.html'
-      // chunks: ['index']
+      filename: './links.html',
+      chunks: ['projects']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/sites.html',
-      filename: './sites.html'
-      // chunks: ['index']
+      filename: './sites.html',
+      chunks: ['projects']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/services.html',
-      filename: './services.html'
-      // chunks: ['index']
+      filename: './services.html',
+      chunks: ['projects']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/textbooks.html',
-      filename: './textbooks.html'
-      // chunks: ['index']
+      filename: './textbooks.html',
+      chunks: ['projects']
     }),
 
     // Partials
