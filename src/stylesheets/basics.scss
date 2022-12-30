@@ -13,6 +13,11 @@ body {
   background-color: var(--dark-grey);
 }
 
+.comingSoon {
+  display: none;
+  // color: rgba(255, 255, 255, 0.2);
+}
+
 .menubar {
   padding: 20px 0;
 
@@ -78,11 +83,6 @@ h2 {
 
     &:hover {
       color: var(--acid-green);
-    }
-
-    &.comingSoon {
-      display: none;
-      color: rgba(255, 255, 255, 0.2);
     }
   }
 }
